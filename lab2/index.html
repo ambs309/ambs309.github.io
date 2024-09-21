@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-        <meta charset="UTF-8">
-        <title>Cidade</title>
-<header>
-            <h1>A minha Cidade</h1>
-        </header>
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="local.html">localizção</a>
-            <a href="multimedia.html">Multimédia</a>
-            <a href="info.html">Informação</a>
-            </nav>
-            <img src="images/1200px-Vista_de_Almada_by_Juntas_(cropped).jpg" alt="Almada">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <title>Cidade</title>
+    <header>
+        <h1>A minha Cidade</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="local.html">Localização</a>
+        <a href="multimedia.html">Multimédia</a>
+        <a href="info.html">Informação</a>
+    </nav>
+    <img src="images/1200px-Vista_de_Almada_by_Juntas_(cropped).jpg" alt="Almada">
+</head>
+<body>
+    <main>
+        <h2>Home</h2>
+        <p>A minha cidade é muito linda!!!</p>
         
-        <main>
-            <h2>Home</h2>
-            <p>A minha cidade é muito linda!!!</p>
-            <iframe src="local.html" width="100%" height="400px" style="border:0;" loading="lazy"></iframe>
-        </main>
-        </main>
-        <footer>
-            <p>DIW 2024</p>
-        </footer>
-    </body>
+        <div id="info-content"></div>
+        <div id="multimedia-content"></div>
+        <div id="local-content"></div>
+    </main>
+    <footer>
+        <p>DIW 2024</p>
+    </footer>
+
+    <script>
+        function loadContent(url, elementId) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => console.error('Erro ao carregar conteúdo:', error));
+        }
+        loadContent('info.html', 'info-content');
+        loadContent('multimedia.html', 'multimedia-content');
+        loadContent('local.html', 'local-content');
+    </script>
+</body>
 </html>
