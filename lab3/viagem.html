@@ -5,17 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viagem a Almada</title>
 </head>
-
-
-
 <body>
-    
+    <h2>Viagem a Almada/h2>
+        
+        <img src="images/baixaDeCacilhas.jpg" alt="Mais uma imagem exemplificativa, desta vez da baixa de cacilhas uma zona Almadense.">
+        <form method="get" action="https://postman-echo.com/get" id="quizForm">
+    <fieldset>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" value="João" autocomplete="on" autofocus required>
+
+        <label for="apelido">Apelido:</label>
+        <input type="text" name="apelido" id="apelido" maxlength="20" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Insira o seu email" size="40" required>
+    </fieldset>
+
+    <fieldset>
+        <label for="date">Data de partida:</label>
+        <input type="date" id="date" name="date" required>
+    </fieldset>
+
+    <fieldset>
+        <label for="date">Data de regresso:</label>
+        <input type="date" id="date" name="date" required>
+    </fieldset>
+
+    <fieldset>
+        <label for="number">Número de passageiros</label>
+        <input type="number" id="number" name="number" min="1" max="30" step="1">
+    </fieldset>
+
+    <fieldset>
+        <label for="q?">Qual é o meio de transporte que prefere?</label>
+        <select id="q?" name="q?" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Avião">Avião</option>
+            <option value="Carro">Carro</option>
+            <option value="Barco">Barco</option>
+            <option value="Bicicleta">Bicicleta</option>
+            <option value="Comboio/Metro">Comboio/Metro</option>
+            <option value="Mota">Mota</option>
+            <option value="As minhas pernas">As minhas pernas</option>
+            <option value="Não há outro, o tapete do Aladin não existe">Não há outro, o tapete do Aladin não existe</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <input type="reset" value="Reiniciar formulário">
+    </fieldset>
+
+    <br>
+    <br>
+    <input type="submit" value="Enviar">
+</form>
 </body>
-
-
 <footer>
     <p>André Sobreira | Universidade Lusófona | 2024</p>
 </footer>
-
-
 </html>
