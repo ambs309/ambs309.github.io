@@ -12,6 +12,32 @@
         <a href="quizz.html">Quiz</a>
         <a href="viagem.html">Viagem</a>
     </nav>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        img {
+            width: 150px;
+            height: auto;
+            margin-right: 10px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+        }
+
+        iframe {
+            display: block;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            width: 800px;
+            height: 600px;
+        }
+
+        .gallery {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,13 +49,14 @@
     </p>
     
     <h3 id="fotografias">Fotografias</h3>
-    <p>
-        <img src="images/almada2_pequeno.jpg" alt="Foto simples que mostra algumas casas de Almada" onclick="document.getElementById('fotoIframe').src='images/almada2_grande.jpg';">
+    <div class="gallery">
+        <img src="images/almada2_pequeno.jpg" alt="Foto simples de Almada" onclick="document.getElementById('fotoIframe').src='images/almada2_grande.jpg';">
         <img src="images/costa_pequena.jpg" alt="Costa da Caparica" onclick="document.getElementById('fotoIframe').src='images/costa_grande.jpg';">
         <img src="images/forum_pequeno.png" alt="Almada Forum" onclick="document.getElementById('fotoIframe').src='images/Forum_grande.png';">
-    </p>
+    </div>
 
-    <iframe id="fotoIframe" width="800" height="600" frameborder="0" style="border:1px solid #ccc;"></iframe>
+    <!-- Iframe para mostrar a imagem grande -->
+    <iframe id="fotoIframe" src="images/almada2_grande.jpg" frameborder="0"></iframe>
     
     <h3 id="video">Vídeo</h3>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/1BXaXDDR60c?si=NdODVBYiRRiK21RZ" 
@@ -70,4 +97,3 @@
     <p>André Sobreira | Universidade Lusófona | 2024</p>
 </footer>
 </html>
-
