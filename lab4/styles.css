@@ -129,3 +129,16 @@ footer p {
     border: 1px solid #333; 
     text-align: left; 
 }
+
+label {
+    font-size: small;
+}
+
+input {
+    font-size: medium;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
