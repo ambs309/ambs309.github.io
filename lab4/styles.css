@@ -32,12 +32,10 @@ nav a {
     text-transform: uppercase;
     transition: background-color 0.3s, color 0.3s;
 }
-
 nav a:hover {
     background-color: rgb(238, 255, 0); 
     color: black; 
 }
-
 img {
     display: block;
     max-width: 100%;
@@ -71,7 +69,7 @@ footer p {
     font-size: 0.9rem;
 }
 
-
+/* Estilos para a página multimédia */
 .multimedia-page {
 }
 .multimedia-page .gallery {
@@ -114,31 +112,37 @@ footer p {
     line-height: 1.8;
 }
 
+/* Estilos para a página de informações */
 .info-page {
     text-align: center; 
 }
-
 .info-page table {
     margin: 20px auto; 
     border-collapse: collapse; 
     width: 80%; 
 }
-
 .info-page th, .info-page td {
     padding: 10px;
     border: 1px solid #333; 
     text-align: left; 
 }
 
-label {
+/* Estilos específicos para as páginas de formulário (viagem.html e quiz.html) */
+.form-page {
+    text-align: left; /* Alinha o conteúdo de formulários à esquerda */
+    max-width: 600px; /* Limita a largura dos formulários */
+    margin: 20px auto; /* Centraliza o formulário na página */
+}
+
+.form-page label {
     font-size: small;
-}
-
-input {
-    font-size: medium;
-}
-
-label, input {
     display: block;
     margin-bottom: 10px;
+}
+
+.form-page input {
+    font-size: medium;
+    display: block;
+    margin-bottom: 10px;
+    width: 100%; /* Faz com que os inputs ocupem toda a largura do formulário */
 }
