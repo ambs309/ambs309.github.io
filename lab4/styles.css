@@ -30,11 +30,14 @@ nav a {
     padding: 14px 20px;
     text-decoration: none;
     text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s;
 }
+
 nav a:hover {
-    background-color: #07b984;
-    transition: background-color 0.3s;
+    background-color: rgb(238, 255, 0); 
+    color: black; 
 }
+
 img {
     display: block;
     max-width: 100%;
