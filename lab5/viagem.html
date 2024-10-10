@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagem a Almada</title>
+    <link rel="icon" href="images/alm1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <header><h1>Viagem a Almada</h1></header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="local.html">Localização</a>
+        <a href="multimedia.html">Multimédia</a>
+        <a href="info.html">Informação</a>
+        <a href="quizz.html">Quiz</a>
+        <a href="viagem.html">Viagem</a>
+        <a href="pontosinteresse.html">Pontos de Interesse</a>        
+    </nav>
+</head>
+
+
+    <body>   
+        <body class="viagem-page">
+    <img src="images/baixaDeCacilhas.jpg" alt="Mais uma imagem exemplificativa, desta vez da baixa de cacilhas uma zona Almadense num dos estreitos mais frequentados por toda gente a que a lá se dirige ou vive, altamente munido de vários restaurantes.">
+
+    <form method="get" action="https://postman-echo.com/get" id="quizForm">
+        <fieldset>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" value="João" autocomplete="on" autofocus required>
+
+            <label for="apelido">Apelido:</label>
+            <input type="text" name="apelido" id="apelido" maxlength="20" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Insira o seu email" size="40" required>
+        </fieldset>
+
+        <fieldset>
+            <label for="date">Data de partida:</label>
+            <input type="date" id="dataPartida" name="dataPartida" required>
+        </fieldset>
+
+        <fieldset>
+            <label for="dataRegresso">Data de regresso:</label>
+            <input type="date" id="dataRegresso" name="dataRegresso" required>
+        </fieldset>
+
+        <fieldset>
+            <label for="number">Número de passageiros:</label>
+            <input type="number" id="number" name="number" min="1" max="30" step="1" required>
+        </fieldset>
+
+        <fieldset>
+            <label for="transporte">Qual é o meio de transporte que prefere?</label>
+            <select id="transporte" name="transporte" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="Avião">Avião</option>
+                <option value="Carro">Carro</option>
+                <option value="Barco">Barco</option>
+                <option value="Bicicleta">Bicicleta</option>
+                <option value="Comboio/Metro">Comboio/Metro</option>
+                <option value="Mota">Mota</option>
+                <option value="As minhas pernas">As minhas pernas</option>
+                <option value="Não há outro, o tapete do Aladin não existe">Não há outro, o tapete do Aladin não existe</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <label>Qual o serviço que deseja na sua viagem?</label>
+            <label>
+                <input type="radio" name="servico" value="basico" required>
+                Básico
+            </label>
+            <label>
+                <input type="radio" name="servico" value="premium">
+                Premium
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="pedidosEspeciais">Pedidos especiais:</label>
+            <textarea id="pedidosEspeciais" name="pedidosEspeciais" rows="4" cols="50" placeholder="Descreva aqui os seus pedidos especiais."></textarea>
+        </fieldset>
+
+        <fieldset>
+            <label for="valor">Qual o valor que espera gastar por pessoa e por dia?</label>
+            <input type="number" id="valor" name="valor" min="1" step="0.01" required placeholder="Ex: 50.00">
+        </fieldset>
+
+        <fieldset>
+            <input type="reset" value="Reiniciar formulário">
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+<footer>
+    <p>André Sobreira | Universidade Lusófona | 2024</p>
+</footer>
+</html>
