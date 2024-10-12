@@ -15,7 +15,9 @@ header h1 {
     background-color: #03d806;
     color: white;
     font-size: 2.5rem;
+    text-transform: uppercase;
 }
+
 header h1 b {
     font-weight: bold;
 }
@@ -126,8 +128,88 @@ footer p {
 }
 
 
-.interestPoints-page{
-    
+
+.interestPoints-page {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+
+.interestPoints-page ul li:nth-child(odd) {
+    color: #bbff00; 
+}
+
+.interestPoints-page ul li:nth-child(even) {
+    color: #007740; 
+}
+
+.interestPoints-page ol li:nth-child(odd) {
+    color: #8bc34a; 
+}
+
+.interestPoints-page ol li:nth-child(even) {
+    color: #09ff00;
+}
+
+
+.interestPoints-page ul {
+    list-style-type: square;
+}
+
+
+.interestPoints-page ol {
+    list-style-type: lower-roman; 
+}
+
+.interestPoints-page ul li, 
+.interestPoints-page ol li {
+    font-size: 2em; 
+}
+
+.interestPoints-page table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.interestPoints-page th, .interestPoints-page td {
+    padding: 10px;
+    border: 1px solid #333; 
+}
+
+.interestPoints-page th {
+    background-color: #03d806; 
+    color: white; 
+    text-align: center;
+}
+
+.interestPoints-page td {
+    text-align: center;
+    background-color: #f4f4f4; 
+}
+
+
+.interestPoints-page tr:nth-child(odd) td {
+    background-color: #bbff00; 
+}
+
+.interestPoints-page tr:nth-child(even) td {
+    background-color: #007740;
+    color: white; 
+}
+
+.interestPoints-page table caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
 
 
