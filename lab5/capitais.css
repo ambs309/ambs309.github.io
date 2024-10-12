@@ -1,0 +1,106 @@
+
+* {
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #03a9f4; 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header h1 {
+    margin-left: 20px;
+}
+
+
+nav {
+    display: flex;
+}
+
+
+nav a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+nav a:last-child {
+    background-color: #ff9800; 
+}
+
+
+nav a:link {
+    color: white;
+}
+
+nav a:visited {
+    color: lightgray;
+}
+
+nav a:hover {
+    background-color: #0288d1;
+    color: black;
+}
+
+nav a:active {
+    color: yellow;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+
+#poema {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    background-color: #f5a623;  
+}
+
+#poema p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+
+#poema p:first-child {
+    font-weight: bold;
+}
+
+
+#poema p:last-child {
+    font-style: italic;
+}
+
+
