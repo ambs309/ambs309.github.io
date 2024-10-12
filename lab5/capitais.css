@@ -16,7 +16,7 @@ body {
 header {
     position: sticky;
     top: 0;
-    background-color: #03a9f4; 
+    background-color: #5deb41; 
     color: white;
     display: flex;
     justify-content: space-between;
@@ -57,7 +57,7 @@ nav a:visited {
 }
 
 nav a:hover {
-    background-color: #0288d1;
+    background-color: #009973;
     color: black;
 }
 
@@ -84,7 +84,7 @@ footer p {
     align-items: center;
     width: 100vw;
     height: 50vh;
-    background-color: #f5a623;  
+    background-color: #baffa8;  
 }
 
 #poema p {
@@ -202,7 +202,7 @@ footer p {
 .circle {
     width: 100px;
     height: 100px;
-    background-color: #03a9f4;
+    background-color: #00ff4c;
     color: white;
     display: flex;
     justify-content: center;
@@ -218,7 +218,7 @@ footer p {
 }
 
 .trigger {
-    background-color: #ff9800;
+    background-color: #036e15;
     color: white;
     padding: 10px;
     cursor: pointer;
@@ -243,12 +243,12 @@ footer p {
 
 .icons-container i {
     font-size: 3rem;
-    color: #03a9f4;
+    color: #00ad48;
     transition: color 0.3s;
 }
 
 .icons-container i:hover {
-    color: #ff9800;
+    color: #00ff22;
 }
 
 p {
