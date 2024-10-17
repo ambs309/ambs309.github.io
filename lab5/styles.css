@@ -210,6 +210,14 @@ footer p {
     text-align: left;
 }
 
+.interestPoints-page section {
+    background-color: white; 
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
 p {
     font-family: "Times New Roman", Times, serif;
 }
