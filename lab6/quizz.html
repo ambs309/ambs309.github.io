@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sobre Almada</title>
+    <link rel="icon" href="images/alm1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+
+<body>
+    <header><h1>Quiz sobre Almada</h1></header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="local.html">Localização</a>
+        <a href="multimedia.html">Multimédia</a>
+        <a href="info.html">Informação</a>
+        <a href="quizz.html">Quiz</a>
+        <a href="viagem.html">Viagem</a>
+        <a href="pontosinteresse.html">Pontos de Interesse</a> 
+        <a href="capitais.html">Capitais</a>        
+    </nav>
+    <body class="quiz-page">
+    <form method="get" action="https://postman-echo.com/get" id="quizForm">
+
+        <img src="images/Overview-of-Almada.png" alt="Panorâmica de cacilhas,
+         uma das zonas mais turisíticas da cidade de Almada, 
+        com uma vasta de gama de establecimentos do mais variados tipo destacando-se os da área da restauração!">
+
+        <fieldset>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" value="João" autocomplete="on" autofocus required>
+
+            <label for="apelido">Apelido:</label>
+            <input type="text" name="apelido" id="apelido" maxlength="20" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Insira o seu email" size="40" required>
+        </fieldset>
+
+        <fieldset>
+            <label for="q1">Sabias que a cidade de Almada está localizada na margem sul do Tejo?</label>
+            <input type="text" id="q1" name="q1" placeholder="Responda sim ou não" required>
+        </fieldset>
+
+        <fieldset>
+            <p>A nível de População, em que lugar acreditas que esteja a cidade de Almada num ranking a nível nacional?</p>
+            <label><input type="radio" name="q2" value="47º" required> 47º</label><br>
+            <label><input type="radio" name="q2" value="23º"> 23º</label><br>
+            <label><input type="radio" name="q2" value="10º*"> 10º</label><br>
+        </fieldset>
+
+        <fieldset>
+            <p>Almada é um berço de gente nobre e fenomenal!</p>
+            <p>Qual dos conjuntos de gente idónea abaixo, representa de facto gente nascida em Almada?</p><br>
+            <label><input type="checkbox" name="q3" value="Grupo 1, correto*"> <b>André Sobreira</b>, Daniela Melchior,
+                Luís Figo</label><br>
+            <label><input type="checkbox" name="q3" value="Grupo 2"> Tomás Taveira, José Eduardo dos Santos, Margarida
+                Corceiro</label><br>
+            <label><input type="checkbox" name="q3" value="Grupo 3"> Álvaro Siza Vieira, Amália Rodrigues, Jorge Jesus
+            </label><br>
+        </fieldset>
+
+        <fieldset>
+            <label for="q4">Escolhe o nome da ponte que liga Almada a Lisboa:</label>
+            <select id="q4" name="q4" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="ponte de Oliveira de Salazar">ponte de Oliveira de Salazar</option>
+                <option value="Golden Gate Bridge">Golden Gate Bridge</option>
+                <option value="Ponte da Conchinchina">Ponte da Conchinchina</option>
+                <option value="Ponte 25 de Abril">Ponte 25 de Abril</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <label for="q5">Na tua concepção, como vês a cidade de Almada?</label><br>
+            <textarea id="q5" name="q5" rows="4" cols="50" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <label for="date">Data da resposta ao Quiz [*PARA EFEITOS DE ATUALIZAÇÃO*]</label>
+            <input type="date" id="date" name="date" required>
+        </fieldset>
+
+        <fieldset>
+            <label for="time">A que horas do dia estás a responder a este, indubitavelmente, maravilhoso questionário?</label>
+            <input type="time" id="time" name="time" step="600">
+        </fieldset>
+
+        <fieldset>
+            <label for="color">Qual é a cor predominante nesta imagem de um famoso parque em Almada, o Parque da Paz?</label>
+            <input type="color" id="color" name="color">
+        </fieldset>
+
+        <fieldset>
+            <label for="number">Escolhe um número entre 1 e 100:</label>
+            <input type="number" id="number" name="number" min="1" max="100" step="5">
+        </fieldset>
+
+        <fieldset>
+            <label for="range">Numera a tua apreciação de Almada numa escala de 1 a 10:</label>
+            <input type="range" id="range" name="range" min="1" max="10" step="1">
+        </fieldset>
+
+        <fieldset>
+            <label for="image_input">Clique na imagem para enviar o formulário:</label>
+            <input type="image" id="image_input" src="images/pngimg.com - red_arrow_PNG1.png" alt="Seta vermelha que se destina a servir como outro botão
+             de submissão para além do clássico enviar/submeter, 
+            que também está disponível abaixo." width="200" height="150">
+        </fieldset>
+
+        <fieldset>
+            <input type="reset" value="Reiniciar formulário">
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+<footer>
+<p>André Sobreira | Universidade Lusófona | 2024</p>
+</footer>
+</html>

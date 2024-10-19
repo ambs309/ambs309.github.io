@@ -1,0 +1,269 @@
+
+* {
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #5deb41; 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header h1 {
+    margin-left: 20px;
+}
+
+
+nav {
+    display: flex;
+}
+
+
+nav a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+nav a:last-child {
+    background-color: #7affa0; 
+    border-radius: 10px;
+}
+
+
+nav a:link {
+    color: white;
+}
+
+nav a:visited {
+    color: rgb(5, 178, 138);
+}
+
+nav a:hover {
+    background-color: #4dff00;
+    color: rgb(1, 99, 34);
+    border-radius: 6px;
+
+}
+
+nav a:active {
+    color: yellow;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+
+#poema {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; 
+    background-color: #baffa8;
+}
+
+#poema div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Ensure text alignment in the div */
+}
+
+#poema p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+
+
+#poema p:first-child {
+    font-weight: bold;
+}
+
+
+#poema p:last-child {
+    font-style: italic;
+}
+
+
+#paisagem {
+    height: auto;
+    margin: 0;
+}
+
+.imagem-container {
+    width: 100%; 
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.imagem-container img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0; 
+}
+
+
+
+
+.fotografo {
+    position: absolute;
+    bottom: 0;  
+    right: 0;  
+    color: white; 
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+
+
+.fotografo a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.fotografo a:hover {
+    text-decoration: underline;
+}
+
+#cidades {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#cidades section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+#cidades img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px 0 10px 0; 
+}
+
+.city-info {
+    height: 100%;
+    background-color: #eaeaea;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.city-info:hover {
+    background-color: #dcdcdc;
+}
+
+#experimenta {
+    padding: 20px;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.circle-container {
+    display: flex;
+    gap: 20px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #00ff4c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; 
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.hidden-container {
+    text-align: center;
+}
+
+.trigger {
+    background-color: #036e15;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.hidden-content {
+    display: none;
+    margin-top: 10px;
+    background-color: #eaeaea;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.trigger:hover + .hidden-content {
+    display: block; 
+}
+
+.icons-container {
+    display: flex;
+    gap: 20px;
+}
+
+.icons-container i {
+    font-size: 3rem;
+    color: #00ad48;
+    transition: color 0.3s;
+}
+
+.icons-container i:hover {
+    color: #00ff22;
+}
+
+p {
+    font-family: "Times New Roman", Times, serif;
+}
