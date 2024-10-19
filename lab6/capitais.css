@@ -311,6 +311,26 @@ body, html {
     object-fit: cover; 
 }
 
+@keyframes SlideParaADireitaa {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  nav {
+    animation-name: SlideParaADireitaa;  
+    animation-duration: 1.5s;          
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;       
+    animation-fill-mode: forwards;     
+  }
+  
+
 
 
 
