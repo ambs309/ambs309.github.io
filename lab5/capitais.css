@@ -61,7 +61,7 @@ nav a:hover {
     background-color: #4dff00;
     color: rgb(1, 99, 34);
     border-radius: 6px;
-    
+
 }
 
 nav a:active {
@@ -85,7 +85,6 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
     height: 50vh;
     background-color: #baffa8;  
 }
@@ -108,7 +107,6 @@ footer p {
 
 
 #paisagem {
-    width: 100vw;
     height: auto;
     margin: 0;
 }
@@ -175,7 +173,6 @@ footer p {
 }
 
 .city-info {
-    width: 100px;
     height: 100%;
     background-color: #eaeaea;
     padding: 10px;
