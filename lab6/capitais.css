@@ -264,6 +264,33 @@ footer p {
     color: #00ff22;
 }
 
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.parallax {
+    min-height: 500px;
+    
+    background-image: url('images/8688799807_3a6b4e29a6_b.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    position: relative;
+    z-index: 1;
+}
+.parallax-content {
+    position: relative;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    z-index: 2;
+}
+
 p {
     font-family: "Times New Roman", Times, serif;
 }
