@@ -1,3 +1,133 @@
+/* smartphones */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, footer {
+    width: 100%;
+    text-align: center;
+    background-color: #5deb41;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #036e15;
+    padding: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    background-color: #028c1d;
+    padding: 7px;
+    transition: background-color 0.3s;
+}
+
+.aside-container {
+    display: none;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 1.3rem;
+}
+
+main p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/*landscape para os smartphones */
+@media (min-width: 481px) and (max-width: 767px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+
+    main p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+            "header header"
+            "nav main"
+            "footer footer";
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    nav {
+        grid-area: nav;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    main {
+        grid-area: main;
+        text-align: left;
+    }
+
+    aside {
+        display: block;
+        margin: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background-color: #e0f4e3;
+    }
+
+    .aside-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
 
 /* Computador comum */
 @media (min-width: 1025px) and (max-width: 1920px) {
@@ -42,196 +172,7 @@
     }
 }
 
-/* Estilos globais */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
-}
-
-header, footer {
-    width: 100%;
-    text-align: center;
-    background-color: #5deb41;
-    padding: 20px;
-}
-
-header h1 {
-    font-size: 1.5rem;
-}
-
-main {
-    padding: 20px;
-    text-align: center;
-}
-
-main h2 {
-    font-size: 1.3rem;
-}
-
-main p {
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-footer p {
-    font-size: 0.9rem;
-}
-
-/* Nav estilo dropdown para dispositivos móveis */
-.menu-button {
-    display: none; /* Oculto por padrão */
-}
-
-nav {
-    display: none;
-}
-
-/* Mostrar o botão de menu para dispositivos móveis */
-@media (max-width: 767px) {
-    .menu-button {
-        display: block;
-        background-color: #036e15;
-        color: white;
-        padding: 10px;
-        font-size: 1.2rem;
-        text-align: center;
-        cursor: pointer;
-        width: 100%;
-        border: none;
-    }
-
-    .menu-button:checked + nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #036e15;
-    }
-
-    nav a {
-        display: block;
-        color: white;
-        padding: 10px;
-        text-align: center;
-        width: 100%;
-        border-top: 1px solid #028c1d;
-        text-decoration: none;
-    }
-
-    nav a:hover {
-        background-color: #028c1d;
-        padding: 12px;
-        transition: background-color 0.3s;
-    }
-}
-
-/* Layout para tablets (horizontal) */
-@media (min-width: 768px) and (max-width: 1024px) {
-    body {
-        grid-template-columns: 1fr 3fr;
-        grid-template-rows: auto 1fr auto;
-        grid-template-areas:
-            "header header"
-            "nav main"
-            "footer footer";
-    }
-
-    nav {
-        grid-area: nav;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        background-color: #036e15;
-        padding: 20px;
-    }
-
-    main {
-        grid-area: main;
-        text-align: left;
-    }
-
-    nav a {
-        color: white;
-        text-decoration: none;
-        padding: 10px 0;
-        display: block;
-        font-size: 1.2rem;
-    }
-
-    nav a:hover {
-        background-color: #028c1d;
-        padding-left: 15px;
-        transition: padding-left 0.3s;
-    }
-
-    aside {
-        grid-area: aside;
-        background-color: #e0f4e3;
-        padding: 20px;
-        display: block;
-    }
-}
-
-/* Layout para desktops */
-@media (min-width: 1025px) {
-    body {
-        grid-template-columns: 1fr 4fr 1fr;
-        grid-template-rows: auto 1fr auto;
-        grid-template-areas:
-            "header header header"
-            "nav main aside"
-            "footer footer footer";
-    }
-
-    nav {
-        grid-area: nav;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        padding: 20px;
-        background-color: #036e15;
-    }
-
-    main {
-        grid-area: main;
-        padding: 30px;
-        font-size: 1.1rem;
-    }
-
-    nav a {
-        color: white;
-        text-decoration: none;
-        padding: 10px 0;
-        font-size: 1.2rem;
-        display: block;
-    }
-
-    nav a:hover {
-        background-color: #028c1d;
-        padding-left: 15px;
-        transition: padding-left 0.3s;
-    }
-
-    aside {
-        grid-area: aside;
-        background-color: #e0f4e3;
-        padding: 20px;
-        display: block;
-    }
-
-    footer {
-        padding: 30px;
-    }
-}
-
-/* Layout para telas 4K */
+/* 4K */
 @media (min-width: 1921px) {
     body {
         grid-template-columns: 1fr 6fr 1fr;
@@ -259,5 +200,4 @@ nav {
         font-size: 1.1rem;
     }
 }
-
 
