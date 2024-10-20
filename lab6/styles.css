@@ -256,6 +256,106 @@ footer p {
     transform: translateX(0); 
 }
 
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+form fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+form fieldset legend {
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #555;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="time"],
+form input[type="number"],
+form input[type="color"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+form input[type="submit"],
+form input[type="reset"],
+form input[type="button"] {
+    background-color: #36ff76;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover,
+form input[type="button"]:hover {
+    background-color: #00ff5e;
+}
+
+form input[type="image"] {
+    display: block;
+    margin: 20px auto;
+}
+
+form .range-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form .range-wrapper input[type="range"] {
+    width: 80%;
+}
+
+form .range-wrapper span {
+    width: 15%;
+    text-align: center;
+}
+
+form .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+form .buttons input {
+    width: 48%;
+}
+
+
 
 
 
