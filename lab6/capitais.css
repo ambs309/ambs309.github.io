@@ -292,30 +292,49 @@ body, html {
 }
 
 .video-background {
-    position: relative;
+    position: relative; 
     width: 100%;
-    height: 100vh; 
-    overflow: hidden;
+    height: auto;
+    margin-top: 20px;
+    z-index: 1; 
+    overflow: hidden; 
 }
 
 .video-background video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;   
-    min-height: 100%;
-    width: auto;
+    width: 100%;
     height: auto;
-    transform: translate(-50%, -50%);
-    z-index: -1;      
-    object-fit: cover; 
+    display: block;
 }
+
+.video-background .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+    background-color: rgba(0, 0, 0, 0.401); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    z-index: 2; 
+}
+
+.video-background h2 {
+    margin: 0;
+    padding: 0;
+}
+
+
 
 .galeria {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    padding: 30px;
 }
 
 .foto-container {
@@ -333,7 +352,7 @@ body, html {
 }
 
 .foto-container p {
-    margin-top: 10px;
+    margin-top: 25px;
     text-align: center;
     font-size: 1rem;
 }
