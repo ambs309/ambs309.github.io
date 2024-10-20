@@ -311,6 +311,57 @@ body, html {
     object-fit: cover; 
 }
 
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.foto-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.foto-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.foto-container p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.transform:hover {
+    transform: scale(1.1);
+}
+
+.hover-effect img {
+    transition: filter 0.3s ease;
+}
+
+.hover-effect:hover img {
+    filter: grayscale(100%);
+}
+
+@media (max-width: 768px) {
+    .foto-container {
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .foto-container {
+        width: 100px;
+    }
+}
+
   
 
 
