@@ -71,6 +71,7 @@ footer p {
 }
 
 
+
 .multimedia-page {
 }
 .multimedia-page .gallery {
@@ -110,8 +111,10 @@ footer p {
     color: #555;
     text-align: justify;
     margin-top: 20px;
-    line-height: 1.8;
+    line-height: 1.8; 
+    white-space: pre-line; 
 }
+
 
 .info-page {
     text-align: center; 
@@ -359,9 +362,11 @@ form .buttons input {
 
 
 
-p {
+p h1 h2 h3 h4{
     font-family: "Times New Roman", Times, serif;
 }
+
+
 
 
 
