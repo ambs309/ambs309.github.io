@@ -1,0 +1,113 @@
+header h1 {
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(209, 209, 209)
+    
+    
+}
+
+*p{
+    font-size: small;
+}
+
+
+header h1 b {
+    font-weight: bold;
+}
+
+
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(209, 209, 209)
+    
+    
+}
+
+
+
+
+.IWEB {
+    background-color: white; 
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 20px;
+
+}
+
+.Laboratórios {
+
+    background-color: white; 
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 20px;
+}
+
+.Introdução{
+
+    background-color: white; 
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 20px;
+
+}
+
+div :nth-child(2){
+    background-color: rgb(255, 0, 0); 
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 20px;
+
+}
+
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+
+
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1440px) {
+ 
+    .desktop-menu {
+        display: none;
+    }
+
+
+    .mobile-menu {
+        display: block;
+    }
+}
