@@ -1,12 +1,42 @@
+const countButton = document.querySelector('button');
+const countDisplay = document.querySelector('h2');
+let count = 0;
 
-let counter=0;
-const heading = document.querySelector('h2');
+countButton.addEventListener('click', () => {
+  count++;
+  countDisplay.textContent = count;
+});
 
-function count(){
-    counter++
-  heading.innerHTML = counter
-}
+const aboutSection = document.querySelector('#about');
 
-const button = document.querySelector('button');
-button.addEventListener('click', count);
+aboutSection.addEventListener('dblclick', () => {
+  aboutSection.style.backgroundColor = aboutSection.style.backgroundColor === 'lightblue' ? 'white' : 'lightblue';
+});
 
+const navLinks = document.querySelectorAll('nav a');
+
+navLinks.forEach(link => {
+  link.addEventListener('mouseover', () => {
+    link.style.color = 'blue';
+  });
+  
+  link.addEventListener('mouseout', () => {
+    link.style.color = '';
+  });
+});
+
+const headerText = document.querySelector('header h1');
+
+document.addEventListener('keydown', (event) => {
+  headerText.textContent = `Key Pressed: ${event.key}`;
+});
+
+const colorInput = document.createElement('input');
+colorInput.type = 'color';
+colorInput.style.display = 'block';
+colorInput.style.margin = '20px auto';
+document.body.appendChild(colorInput);
+
+colorInput.addEventListener('change', () => {
+  document.body.style.backgroundColor = colorInput.value;
+});
