@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+header h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #03d806;
+    color: white;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+header h1 b {
+    font-weight: bold;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s;
+}
+nav a:hover {
+    background-color: rgb(238, 255, 0); 
+    color: black; 
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+main {
+    padding: 20px;
+    background-color: white;
+    max-width: 900px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+main h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+main p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+footer p {
+    font-size: 0.9rem;
+}
+
+iframe {
+    display: block;
+    margin: 20px auto; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.multimedia-page {
+}
+.multimedia-page .gallery {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.multimedia-page .gallery img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.multimedia-page .gallery img:hover {
+    transform: scale(1.05);
+}
+.multimedia-page iframe[name="frameFotos"] {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.multimedia-page h3 {
+    border-bottom: 2px solid #03d806;
+    padding-bottom: 10px;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+.multimedia-page iframe {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.multimedia-page p i {
+    font-style: italic;
+    color: #555;
+    text-align: justify;
+    margin-top: 20px;
+    line-height: 1.8; 
+    white-space: pre-line; 
+}
+
+
+.info-page {
+    text-align: center; 
+}
+.info-page table {
+    margin: 20px auto; 
+    border-collapse: collapse; 
+    width: 80%; 
+}
+.info-page th, .info-page td {
+    padding: 10px;
+    border: 1px solid #333; 
+    text-align: left; 
+}
+
+.interestPoints-page section {
+    background-color: white; 
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+.interestPoints-page h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.interestPoints-page section p{
+    font-size: 1.8em;
+}
+
+.interestPoints-page ul {
+    list-style-type: circle;
+    padding-left: 20px;
+    color: rgb(0, 255, 0);
+    font-size: 1.8em;
+}
+
+.interestPoints-page ol {
+    list-style-type: lower-roman; 
+    padding-left: 20px;
+    color: rgb(0, 255, 0);
+}
+
+.interestPoints-page ol li:nth-child(even) {
+    color: rgb(0, 150, 90); 
+}
+
+.interestPoints-page ol li {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.interestPoints-page h2 {
+    text-align: center;
+    color: #18c712;
+    font-weight: bold;
+}
+
+
+.interestPoints-page table {
+    width: 90%; 
+    margin: 20px auto; 
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.interestPoints-page th, .interestPoints-page td {
+    padding: 15px; 
+    text-align: center; 
+    border: 1px solid #ddd; 
+}
+
+.interestPoints-page th {
+    background-color: #9dff70; 
+    color: white; 
+}
+
+.interestPoints-page tr:nth-child(even) {
+    background-color: #f2f2f2; 
+}
+
+.interestPoints-page tr:hover {
+    background-color: #ddd; 
+
+}
+
+.interestPoints-page caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+}
+
+.interestPoints-page td {
+    font-size: 1rem; 
+}
+
+.toggle-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #036e15;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.toggle-button:hover {
+    background-color: #028c1d;
+}
+
+
+.aside-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+
+.aside-item {
+    width: 30%;
+    padding: 10px;
+    background-color: #e0f4e3;
+    border: 1px solid #ccc;
+    opacity: 0;
+    transform: translateX(-100%); 
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+
+#toggle-asides:checked ~ .aside-container .aside-item {
+    opacity: 1;
+    transform: translateX(0); 
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+form fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+form fieldset legend {
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #555;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="time"],
+form input[type="number"],
+form input[type="color"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+form input[type="submit"],
+form input[type="reset"],
+form input[type="button"] {
+    background-color: #36ff76;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover,
+form input[type="button"]:hover {
+    background-color: #00ff5e;
+}
+
+form input[type="image"] {
+    display: block;
+    margin: 20px auto;
+}
+
+form .range-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form .range-wrapper input[type="range"] {
+    width: 80%;
+}
+
+form .range-wrapper span {
+    width: 15%;
+    text-align: center;
+}
+
+form .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+form .buttons input {
+    width: 48%;
+}
+
+
+
+p h1 h2 h3 h4{
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+
+
+
+
