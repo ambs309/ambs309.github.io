@@ -1,5 +1,5 @@
-const countButton = document.querySelector('button');
-const countDisplay = document.querySelector('h2');
+const countButton = document.getElementById('count-button');
+const countDisplay = document.querySelector('#counter h2');
 let count = 0;
 
 countButton.addEventListener('click', () => {
@@ -7,7 +7,7 @@ countButton.addEventListener('click', () => {
   countDisplay.textContent = count;
 });
 
-const aboutSection = document.querySelector('#about');
+const aboutSection = document.getElementById('about');
 
 aboutSection.addEventListener('dblclick', () => {
   aboutSection.style.backgroundColor = aboutSection.style.backgroundColor === 'lightblue' ? 'white' : 'lightblue';
@@ -21,9 +21,10 @@ navLinks.forEach(link => {
   });
   
   link.addEventListener('mouseout', () => {
-    link.style.color = '';
+    link.style.color = ''; 
   });
 });
+
 
 const headerText = document.querySelector('header h1');
 
@@ -31,11 +32,8 @@ document.addEventListener('keydown', (event) => {
   headerText.textContent = `Key Pressed: ${event.key}`;
 });
 
-const colorInput = document.createElement('input');
-colorInput.type = 'color';
-colorInput.style.display = 'block';
-colorInput.style.margin = '20px auto';
-document.body.appendChild(colorInput);
+
+const colorInput = document.getElementById('bg-color');
 
 colorInput.addEventListener('change', () => {
   document.body.style.backgroundColor = colorInput.value;
