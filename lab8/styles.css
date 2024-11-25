@@ -65,7 +65,7 @@ main {
     padding: 20px;
     max-width: 900px;
     margin: 20px auto;
-    flex: 1; /* Allows main to expand and push the footer down */
+    flex: 1; 
 }
 
 main h2 {
@@ -120,12 +120,12 @@ main ol li {
 
 main ol li .content {
     display: flex;
-    align-items: center; /* Center items vertically */
-    gap: 10px; /* Space between text and buttons */
+    align-items: center; 
+    gap: 10px;
 }
 
 ol li p {
-    margin: 0; /* Remove default margin */
+    margin: 0;
 }
 
 

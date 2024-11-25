@@ -8,11 +8,11 @@
     <script src="index.js" defer></script>
 </head>
 <body>
-    <header><h1><b>Página de testes de JavaScript</b></h1></header>
+    <header>
+        <h1><b>Página de testes de JavaScript</b></h1>
+    </header>
     <nav>
-           <a href="index.html">Index</a>
-           <a href="eventos.html">Eventos</a>
-           <a href="https://ambs309.github.io/">Main</a>
+        <a href="https://ambs309.github.io/">Main</a>
     </nav>
     <main>
         <div class="main-interactive">
@@ -23,12 +23,11 @@
                 <li>
                     <div class="content">
                         <p>Pinta-me!</p>
-                        <button>Red</button>
-                        <button>Green</button>
-                        <button>Blue</button>
+                        <button data-color="red">Red</button>
+                        <button data-color="green">Green</button>
+                        <button data-color="blue">Blue</button>
                     </div>
                 </li>
-                
                 <li>
                     <label for="f3">Experimenta escrever...</label>
                     <textarea id="f3" name="f3" rows="1" cols="10"></textarea>
@@ -36,15 +35,30 @@
                 <li>
                     <label for="f4">Escolha uma cor em inglês:</label>
                     <textarea id="f4" name="f4" rows="1" cols="10"></textarea>
-                    <button type="submit">submeter</button>
+                    <button type="submit">Submeter</button>
                 </li>
                 <li>
                     <button class="count-button">Conta!</button>
+                    <span id="clickCounter">0</span>
                 </li>
+
+                <li>
+                    <form id="messageForm">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" placeholder="Escreve o nome, sócio">
+                        <label for="age">Idade:</label>
+                        <input type="number" id="age" placeholder="À quanto tempo nasceste">
+                        <button type="submit">Enviar</button>
+                    </form>
+                    <p id="outputMessage"></p>
+                </li>
+                <li id="counter-section">
+                    <p>Automatic Counter: <span id="autoCounter">0</span></p>
+                </li>
+               
             </ol>
         </div>
     </main>
-    
     <footer>
         <p>André Sobreira | Universidade Lusófona | 2024</p>
     </footer>
