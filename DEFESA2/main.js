@@ -22,7 +22,6 @@ function carregarProdutos(produtos) {
     });
 }
 
-// Create product element
 function criarProduto(produto) {
     const artigo = document.createElement('article');
     artigo.classList.add('product-card');
@@ -48,11 +47,11 @@ function criarProduto(produto) {
     return artigo;
 }
 
-// Add product to cart
+
 function adicionarAoCarrinho(produto) {
     let carrinho = JSON.parse(localStorage.getItem('produtos-selecionados'));
 
-    // Add a unique identifier to the product
+
     const produtoComId = { ...produto, idUnico: crypto.randomUUID() };
     carrinho.push(produtoComId);
 
@@ -60,7 +59,7 @@ function adicionarAoCarrinho(produto) {
     atualizaCarrinho();
 }
 
-// Update cart display
+
 function atualizaCarrinho() {
     const carrinho = JSON.parse(localStorage.getItem('produtos-selecionados'));
     const secaoCarrinho = document.querySelector('.carrinho');
@@ -76,7 +75,7 @@ function atualizaCarrinho() {
     document.querySelector('.total').textContent = `Custo total: ${total.toFixed(2)}€`;
 }
 
-// Create cart product element
+
 function criaProdutoCarrinho(produto) {
     const artigo = document.createElement('article');
     artigo.classList.add('product-card');
@@ -99,7 +98,6 @@ function criaProdutoCarrinho(produto) {
     return artigo;
 }
 
-// Remove product from cart
 function removerDoCarrinho(produto) {
     let carrinho = JSON.parse(localStorage.getItem('produtos-selecionados'));
 
@@ -109,7 +107,7 @@ function removerDoCarrinho(produto) {
     atualizaCarrinho();
 }
 
-// Smooth scrolling for navigation links
+
 document.querySelectorAll('.ancora').forEach(link => {
     link.addEventListener('click', function (e) {
         e.preventDefault();
@@ -129,12 +127,11 @@ document.querySelectorAll('.ancora').forEach(link => {
     });
 });
 
-// Capturar os elementos da aba
 const filtroCategoria = document.getElementById('filtro-categoria');
 const ordenarPreco = document.getElementById('ordenar-preco');
 const pesquisar = document.getElementById('pesquisar');
 
-// Armazenar produtos originais para aplicar filtros e ordenações
+
 let produtosOriginais = [];
 
 // Atualizar produtos com base nos controles
