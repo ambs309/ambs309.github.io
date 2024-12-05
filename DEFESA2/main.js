@@ -12,7 +12,7 @@ fetch('https://deisishop.pythonanywhere.com/products/')
     })
     .catch(error => console.error('Erro ao carregar produtos:', error));
 
-// Load products into the page
+
 function carregarProdutos(produtos) {
     const listaProdutos = document.querySelector('.lista-produtos');
     listaProdutos.innerHTML = ''; // Clear existing products
@@ -36,6 +36,9 @@ function criarProduto(produto) {
     const descricao = document.createElement('p');
     descricao.textContent = produto.description;
 
+    const rating = document.createElement('p');
+    rating.textContent = produto.rating;
+   
     const preco = document.createElement('p');
     preco.textContent = `${produto.price.toFixed(2)} €`;
 
@@ -43,9 +46,13 @@ function criarProduto(produto) {
     botao.textContent = '+ Adicionar ao Carrinho';
     botao.addEventListener('click', () => adicionarAoCarrinho(produto));
 
-    artigo.append(titulo, imagem, descricao, preco, botao);
+    artigo.append(titulo, imagem, descricao, rating , preco, botao);
     return artigo;
 }
+
+
+
+//tive de adicionar o rating porque por algum motivo não o tinha no LAB 10 original
 
 
 function adicionarAoCarrinho(produto) {
